@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "SuperJoyful";
+  src: url("/fonts/SuperJoyful.ttf") format("truetype"),
+       url("/fonts/SuperJoyful.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mochibop";
+  src: url("/fonts/Mochibop.ttf") format("truetype"),
+       url("/fonts/Mochibop.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-cozy-cream:       #f3ead9;
+  --color-cozy-brown:       #7a4a33;
+  --color-cozy-light:       #fdf6ec;
+  --color-cozy-muted:       #c4a07a;
+  --color-cozy-dark:        #4a2a18;
+  --color-cozy-darker:      #5a3a22;
+  --color-cozy-tan:         #d4b896;
+  --color-cozy-dot:         #d4c4b0;
+  --color-cozy-sub:         #9a7a60;
+  --color-cozy-accent:      #c4a07a;
+  --color-cozy-cream-light: #fff6e7;
+  --color-cozy-pink:        #ffd1dc;
+  --color-cozy-pink-dark:   #f5a8bc;
+
+  --font-joyful:     "SuperJoyful", serif;
+  --font-mochibop: "Mochibop", serif;
+}
+
+@layer utilities {
+  .writing-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .font-joyful {
+    font-family: "SuperJoyful", serif;
+    font-weight: normal;
+  }
+
+  .font-mochibop {
+    font-family: "Mochibop", serif;
+    font-weight: normal;
+  }
+}
